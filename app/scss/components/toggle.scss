@@ -6,7 +6,9 @@
     border: none;
     margin: 0;
     label {
+        color: var(--toggle-text);
         font-size: rem(14);
+        font-weight: 700;
         &[for='dark'] {
             line-height: rem(24);
             margin-right: rem(13);
@@ -23,11 +25,11 @@
         width: rem(24);
 
         &:focus ~ .toggle__button {
-            border: 2px solid white;
+            border: 2px solid var(--toggle-focus);
         }
     }
     &__background {
-        background: linear-gradient(225deg, var(--toggle-bg-end) 0%, var(--toggle-bg-start) 98.02%);
+        background: var(--toggle-bg);
         border-radius: rem(12);
         display: block;
         height: 100%;
@@ -37,7 +39,7 @@
         width: 100%;
     }
     &__button {
-        background-color: var(--dark-bg);
+        background-color: var(--background);
         border-radius: 50%;
         height: rem(18);
         left: rem(3);
