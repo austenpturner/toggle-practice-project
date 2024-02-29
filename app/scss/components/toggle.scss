@@ -7,6 +7,7 @@
     margin: 0;
     label {
         color: var(--toggle-text);
+        cursor: pointer;
         font-size: rem(14);
         font-weight: 700;
         &[for='dark'] {
@@ -19,11 +20,11 @@
         position: relative;
     }
     input[type='radio'] {
+        cursor: pointer;
         height: rem(24);
         margin: 0 rem(-2) 0 rem(-2);
         opacity: 0;
         width: rem(24);
-
         &:focus ~ .toggle__button {
             border: 2px solid var(--toggle-focus);
         }
