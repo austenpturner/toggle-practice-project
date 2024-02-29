@@ -1,0 +1,8 @@
+@use '../util/' as *;
+
+.footer {
+    font-size: rem(12);
+    a {
+        color: var(--text-color2);
+    }
+}
